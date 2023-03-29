@@ -7,51 +7,38 @@
     <title>CRM-ShopOnline</title>
 </head>
 <body>
-    <main>
-    <section>
-    <h1>Проект  CRM-ShopOnline</h1>
-    <span><b>Добавить товар</b></span>
-    <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+    <div>
+    <h2>Добавить товар</h2>
+    <form action="https://jsonplaceholder.typicode.com/posts" method="POST" name="addProduct">
         <fieldset>
             <label for="name">Наименование</label>
-            <input type="text" name="name" id="name">
-            
-            <br>
+            <input type="text" name="name" id="name" required>
             
             <label for="category">Категория</label>
-            <input type="text" name="category" id="category">
-            
-            <br>
+            <input type="text" name="category" id="category" required>
             
             <label for="unit" >Единицы измерения</label>
-            <input type="text" name="unit" id="unit">
-            
-            <br>
+            <input type="text" name="unit" id="unit" required>
             
             <label for="discount">Дисконт</label>
-            <input type="checkbox" id="discount" value="discount">
-            <input type="text" name="discount_text" disabled>
+            <div>
+            <input type="checkbox" name="discountBox" aria-label="Добавить скидку на товар">
+            <input type="text" name="discountText" id="discount" disabled>
+            </div>
             
-            <br>
-            
-            <label for="description">Описание
-                <textarea name="description" id="description"></textarea>
-            </label>
-            
-            <br>
+            <label for="description">Описание</label>
+            <textarea name="description" id="description" required></textarea>
+             
             <label for="count">Количество</label>
-            <input type="number" name="count" id="count">
-            
-            <br>
+            <input type="number" name="count" id="count" required>
+
             <label for="price">Цена</label>
-            <input type="number" name="price" id="price">
+            <input type="number" name="price" id="price" required>
             
-            <br>
-            <input type="file">
+            <input type="file" accept="image/png, image/jpg, image/jpeg">
         </fieldset>
             <button type="submit">Добавить товар</button>
     </form>
-    </section>
-    </main>
+    </div>
 </body>
 </html>

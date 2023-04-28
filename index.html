@@ -7,6 +7,38 @@
     <title>CRM-ShopOnline</title>
 </head>
 <body>
-    <h1>Главная страница проекта  CRM-ShopOnline</h1>
+    <div>
+    <h2>Добавить товар</h2>
+    <form action="https://jsonplaceholder.typicode.com/posts" method="POST" name="addProduct">
+        <fieldset>
+            <label for="name">Наименование</label>
+            <input type="text" name="name" id="name" required>
+            
+            <label for="category">Категория</label>
+            <input type="text" name="category" id="category" required>
+            
+            <label for="unit" >Единицы измерения</label>
+            <input type="text" name="unit" id="unit" required>
+            
+            <label for="discount">Дисконт</label>
+            <div>
+            <input type="checkbox" aria-label="Добавить скидку на товар" required>
+            <input type="number" name="discountSize" id="discount" disabled required>
+            </div>
+            
+            <label for="description">Описание</label>
+            <textarea name="description" id="description" required></textarea>
+             
+            <label for="count">Количество</label>
+            <input type="number" name="count" id="count" required>
+
+            <label for="price">Цена</label>
+            <input type="number" name="price" id="price" required>
+            
+            <input type="file" multiple accept="image/png, image/jpg, image/jpeg">
+        </fieldset>
+            <button type="submit">Добавить товар</button>
+    </form>
+    </div>
 </body>
 </html>

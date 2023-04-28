@@ -10,36 +10,37 @@
 <body class="page">
     <div class="page__wrapper">
     <h1 class="page__title">Добавить товар</h1>
-    <div class="add-good">
-    <form class="add-good__form" action="https://jsonplaceholder.typicode.com/posts" method="POST" id="form-addproduct" name="addProduct">
-        <fieldset class="add-good__content">
-            <label class="add-good__text" for="name">Наименование</label>
-            <input class="add-good__input" type="text" name="name" id="name" required>
+    <div class="add-product">
+    <form class="add-product__form" action="https://jsonplaceholder.typicode.com/posts" method="POST" id="form-addproduct" name="addProduct">
+        <fieldset class="add-product__content">
+            <label class="add-product__text" for="name">Наименование</label>
+            <input class="add-product__input" type="text" name="name" id="name" required>
             
-            <label class="add-good__text" for="category">Категория</label>
-            <input class="add-good__input" type="text" name="category" id="category" required>
+            <label class="add-product__text" for="category">Категория</label>
+            <input class="add-product__input" type="text" name="category" id="category" required>
             
-            <label class="add-good__text" for="unit" >Единицы измерения</label>
-            <input class="add-good__input" type="text" name="unit" id="unit" required>
+            <label class="add-product__text" for="unit" >Единицы измерения</label>
+            <input class="add-product__input" type="text" name="unit" id="unit" required>
             
-            <label class="add-good__text" for="discount">Дисконт</label>
-            <div class="add-good__discount checkbox">
-            <input class="add-good__checkbox" type="checkbox" aria-label="Добавить скидку на товар" required>
-            <input class="add-good__input add-good__input-discount" type="number" name="discountSize" id="discount" disabled required>
+            <label class="add-product__text" for="discount">Дисконт</label>
+            <div class="add-product__discount checkbox">
+            <input class="add-product__checkbox" type="checkbox" aria-label="Добавить скидку на товар" required>
+            <input class="add-product__input add-product__input-discount" type="number" name="discountSize" id="discount" disabled required>
             </div>
             
-            <label class="add-good__text" for="description">Описание</label>
-            <textarea class="add-good__input add-good__input-textarea" name="description" id="description" required></textarea>
+            <label class="add-product__text" for="description">Описание</label>
+            <textarea class="add-product__input add-product__input-textarea" name="description" id="description" required></textarea>
              
-            <label class="add-good__text" for="count">Количество</label>
-            <input class="add-good__input" type="number" name="count" id="count" required>
+            <label class="add-product__text" for="count">Количество</label>
+            <input class="add-product__input" type="number" name="count" id="count" required>
 
-            <label class="add-good__text" for="price">Цена</label>
-            <input class="add-good__input" type="number" name="price" id="price" required>
+            <label class="add-product__text" for="price">Цена</label>
+            <input class="add-product__input" type="number" name="price" id="price" required>
         </fieldset>
     </form>
     </div>
     <button class="button" type="submit" form="form-addproduct">Добавить товар</button>
     </div>
+
 </body>
 </html>

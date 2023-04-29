@@ -10,37 +10,63 @@
 <body class="page">
     <div class="page__wrapper">
     <h1 class="page__title">Добавить товар</h1>
-    <div class="add-product">
-    <form class="add-product__form" action="https://jsonplaceholder.typicode.com/posts" method="POST" id="form-addproduct" name="addProduct">
-        <fieldset class="add-product__content">
-            <label class="add-product__text" for="name">Наименование</label>
+      
+    <form class="add-product" action="https://jsonplaceholder.typicode.com/posts" method="POST" id="form-addproduct" name="addProduct">
+        <fieldset class="add-product__fieldset">
+            <label class="add-product__label" for="name">Наименование</label>
             <input class="add-product__input" type="text" name="name" id="name" required>
             
-            <label class="add-product__text" for="category">Категория</label>
+            <label class="add-product__label" for="category">Категория</label>
             <input class="add-product__input" type="text" name="category" id="category" required>
             
-            <label class="add-product__text" for="unit" >Единицы измерения</label>
+            <label class="add-product__label" for="unit">Единицы измерения</label>
             <input class="add-product__input" type="text" name="unit" id="unit" required>
             
-            <label class="add-product__text" for="discount">Дисконт</label>
-            <div class="add-product__discount checkbox">
-            <input class="add-product__checkbox" type="checkbox" aria-label="Добавить скидку на товар" required>
-            <input class="add-product__input add-product__input-discount" type="number" name="discountSize" id="discount" disabled required>
+            <label class="add-product__label">Дисконт</label>
+            <div class="checkbox">
+                <input class="checkbox__input" type="checkbox" aria-label="Добавить скидку на товар" required>
+                <input class="add-product__input add-product__input_small-width-disabled" type="number" name="discountSize" id="discount" disabled required>
             </div>
             
-            <label class="add-product__text" for="description">Описание</label>
-            <textarea class="add-product__input add-product__input-textarea" name="description" id="description" required></textarea>
+            <label class="add-product__label" for="description">Описание</label>
+            <textarea class="add-product__input add-product__input_textarea" name="description" id="description" required></textarea>
              
-            <label class="add-product__text" for="count">Количество</label>
+            <label class="add-product__label" for="count">Количество</label>
             <input class="add-product__input" type="number" name="count" id="count" required>
 
-            <label class="add-product__text" for="price">Цена</label>
+            <label class="add-product__label" for="price">Цена</label>
             <input class="add-product__input" type="number" name="price" id="price" required>
         </fieldset>
     </form>
-    </div>
+
+    <form class="add-product" action="https://jsonplaceholder.typicode.com/posts" method="POST" id="form-addproduct" name="addProduct">
+        <fieldset class="add-product__fieldset">
+            <label class="add-product__label" for="name">Наименование</label>
+            <input class="add-product__input" type="text" name="name" id="name" required>
+            
+            <label class="add-product__label" for="category">Категория</label>
+            <input class="add-product__input" type="text" name="category" id="category" required>
+            
+            <label class="add-product__label" for="unit">Единицы измерения</label>
+            <input class="add-product__input" type="text" name="unit" id="unit" required>
+            
+            <label class="add-product__label">Дисконт</label>
+            <div class="checkbox">
+                <input class="checkbox__input" type="checkbox" aria-label="Добавить скидку на товар" required checked>
+                <input class="add-product__input add-product__input_small-width" type="number" name="discountSize" id="discount" disabled required>
+            </div>
+            
+            <label class="add-product__label" for="description">Описание</label>
+            <textarea class="add-product__input add-product__input_textarea" name="description" id="description" required></textarea>
+             
+            <label class="add-product__label" for="count">Количество</label>
+            <input class="add-product__input" type="number" name="count" id="count" required>
+
+            <label class="add-product__label" for="price">Цена</label>
+            <input class="add-product__input" type="number" name="price" id="price" required>
+        </fieldset>
+    </form>
     <button class="button" type="submit" form="form-addproduct">Добавить товар</button>
     </div>
-
 </body>
 </html>
